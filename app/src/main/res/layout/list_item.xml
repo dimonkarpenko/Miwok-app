@@ -16,30 +16,54 @@
             android:id="@+id/text_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:background="@color/category_numbers"
             android:paddingLeft="16dp">
 
-            <TextView
-                android:id="@+id/miwok_tv"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                tools:text="lutti"
-                android:textStyle="bold"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#fff"
-                android:gravity="bottom"
-                android:layout_weight="1"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/default_tv"
+                <TextView
+                    android:id="@+id/miwok_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    tools:text="lutti"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/default_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    tools:text="one"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                tools:text="one"
-                android:gravity="top"
-                android:layout_weight="1"
-                android:textColor="#fff"
-                android:textAppearance="?android:textAppearanceMedium"/>
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_marginRight="19dp"
+                android:layout_marginEnd="19dp">
+
+                <ImageView
+                    android:id="@+id/play_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
